@@ -29,12 +29,12 @@ def formata_numero(valor, prefixo = ''):
 
 st.title("DASHBOARD DE VENDAS :shopping_trolley:")
 
-#url = "https://labdados.com/produtos"
-#response = requests.get(url)
-#dados = pd.DataFrame.from_dict(url.json())
+url = "https://labdados.com/produtos"
+response = requests.get(url)
+df = pd.DataFrame.from_dict(url.json())
 
-url = "/home/jardelsewo.seed/Documentos/Alura/streamlit/produtos.json"
-df = pd.read_json(url)
+#url = "/home/jardelsewo.seed/Documentos/Alura/streamlit/produtos.json"
+#df = pd.read_json(url)
 
 regioes = ['Brasil', 'Centro-Oeste', 'Nordeste', 'Norte', 'Sudeste', 'Sul']
 
